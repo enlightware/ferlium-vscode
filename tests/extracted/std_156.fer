@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:366"
+
+string_sub_string("a农", 2, 4)

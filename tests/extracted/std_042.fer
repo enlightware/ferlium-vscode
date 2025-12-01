@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:123"
+
+array_map([1, 2, 3], |x| x >= 2)

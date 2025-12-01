@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:57"
+
+let mut a: [int] = []; array_pop_back(a)

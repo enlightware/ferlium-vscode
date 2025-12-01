@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:297"
+
+enum Message {
+    Quit,
+    Move { x: int, y: int },
+    Write(string),
+    ChangeColor(int, int, int),
+    Callback((int) -> int)
+}

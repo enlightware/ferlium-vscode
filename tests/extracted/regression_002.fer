@@ -1,0 +1,14 @@
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:41"
+
+fn count_some(a: [None | Some(int)]) {
+	let mut sum = 0;
+	for option in a {
+		match option {
+			Some(v) => sum = sum + 1,
+			None => ()
+		}
+	};
+	sum
+}
+
+count_some([Some(1), None, Some(2), Some(3), None, Some(4)])

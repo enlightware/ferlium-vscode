@@ -1,0 +1,13 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:413"
+
+fn f() {
+    let mut sum = 0;
+    for i in 0..10 {
+        sum = sum + i;
+        if i == 5 {
+            return sum
+        }
+    };
+    999
+}
+f()

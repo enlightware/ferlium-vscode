@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:339"
+
+fn f() {
+    match { return 42 } {
+        0 => 1,
+        _ => 2
+    }
+}
+f()

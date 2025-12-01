@@ -1,0 +1,6 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:295"
+
+fn f() {
+    [1, 2, { return 42 }, 4][0]
+}
+f()

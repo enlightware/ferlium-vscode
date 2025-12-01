@@ -1,0 +1,6 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:250"
+
+fn f() {
+    (if true { return 42 } else { |x| x })(1)
+}
+f()

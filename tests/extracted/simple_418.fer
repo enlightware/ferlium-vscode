@@ -1,0 +1,11 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:744"
+
+fn my_add(x, y) {
+            x + y
+        }
+        fn my_sub(x, y) {
+            x - y
+        }
+        let mut x = my_add;
+        x = my_sub;
+        x(1, 2)

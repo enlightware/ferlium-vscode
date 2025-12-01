@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:431"
+
+fn f() -> (int, bool) {
+    if true {
+        return (1, true)
+    };
+    (2, false)
+}
+f()

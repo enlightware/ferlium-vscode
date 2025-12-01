@@ -1,0 +1,8 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:207"
+
+enum Message {
+    Quit,
+    Move { x: int, y: int },
+}
+
+Message::Move { y: 30 + 10, x: 30 }

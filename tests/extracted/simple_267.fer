@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:775"
+
+let r = || {a:1, a_o: true, b:2}; r().a + r().b

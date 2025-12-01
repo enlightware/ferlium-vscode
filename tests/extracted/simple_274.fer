@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:793"
+
+fn e(v) { v.toto } let a = e; a({toto: 3})

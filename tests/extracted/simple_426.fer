@@ -1,0 +1,19 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1276"
+
+fn is_even(n) {
+                if n == 0 {
+                    true
+                } else {
+                    is_odd(n - 1)
+                }
+            }
+
+            fn is_odd(n) {
+                if n == 0 {
+                    false
+                } else {
+                    is_even(n - 1)
+                }
+            }
+
+            is_even(10)

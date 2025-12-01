@@ -1,0 +1,97 @@
+// SYNTAX TEST "source.ferlium" "Ferlium syntax highlighting test"
+
+/// Doc comment
+// ^ comment.line.documentation.ferlium
+
+// Line comment
+// ^ comment.line.double-slash.ferlium
+
+fn test_function() {
+// <- keyword.declaration.ferlium
+//  ^ entity.name.function.ferlium
+    let x = 42;
+//  ^^^ keyword.declaration.ferlium
+//          ^^ constant.numeric.integer.ferlium
+    let mut y = true;
+//      ^^^ keyword.declaration.ferlium
+//              ^^^^ constant.language.boolean.ferlium
+    if x > 0 {
+//  ^^ keyword.control.ferlium
+        return x
+//      ^^^^^^ keyword.control.ferlium
+    };
+    y
+}
+
+struct Point {
+// <- keyword.declaration.ferlium
+//      ^ entity.name.type.ferlium
+    x: int,
+//     ^^^ support.type.primitive.ferlium
+}
+
+enum Status {
+// <- keyword.declaration.ferlium
+//    ^ entity.name.type.ferlium
+    Ok,
+    Err,
+}
+
+impl Iterator {
+// <- keyword.declaration.ferlium
+//    ^ entity.name.type.ferlium
+    fn next(a) {
+        a
+    }
+}
+
+fn operators() {
+    let a = 1 + 2;
+//            ^ keyword.operator.arithmetic.ferlium
+    let b = a == 1;
+//            ^^ keyword.operator.comparison.ferlium
+    let c = a and b;
+//            ^^^ keyword.operator.logical.ferlium
+    let d = not c;
+//          ^^^ keyword.operator.logical.ferlium
+    let r = 0..10;
+//           ^^ keyword.operator.range.ferlium
+}
+
+fn strings() {
+    let s = "hello";
+//          ^^^^^^^ string.quoted.double.ferlium
+    let f = f"hello {name}";
+//          ^ string.quoted.double.interpolated.ferlium
+}
+
+fn control_flow() {
+    match x {
+//  ^^^^^ keyword.control.ferlium
+        Some(v) => v,
+//      ^^^^ constant.language.option.ferlium
+//              ^^ keyword.operator.arrow.ferlium
+        None => 0,
+//      ^^^^ constant.language.option.ferlium
+    }
+    
+    for i in range {
+//  ^^^ keyword.control.ferlium
+//        ^^ keyword.control.ferlium
+        soft_break
+//      ^^^^^^^^^^ keyword.control.ferlium
+    }
+    
+    loop {
+//  ^^^^ keyword.control.ferlium
+        soft_break
+    }
+}
+
+fn casting(x: int) -> float {
+//            ^^^ support.type.primitive.ferlium
+//                 ^^ keyword.operator.arrow.ferlium
+//                    ^^^^^ support.type.primitive.ferlium
+    x as float
+//    ^^ keyword.operator.cast.ferlium
+}

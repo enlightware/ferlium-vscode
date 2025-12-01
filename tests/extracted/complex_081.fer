@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:519"
+
+fn f() {
+    let a = [1, 2, 3];
+    a[(if true { return 42 } else { 0 })]
+}
+f()

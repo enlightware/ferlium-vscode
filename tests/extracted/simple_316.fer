@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1155"
+
+fn rf() { rf() } rf() + 0

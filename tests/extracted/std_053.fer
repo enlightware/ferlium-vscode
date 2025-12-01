@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:170"
+
+array_all([1, 2, 3], |x| x >= 2)

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ferlium",
+  "scopeName": "source.ferlium",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#function-definition" },
+    { "include": "#type-definition" },
+    { "include": "#keywords" },
+    { "include": "#operators" },
+    { "include": "#punctuation" },
+    { "include": "#constants" },
+    { "include": "#function-call" },
+    { "include": "#types" },
+    { "include": "#variables" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.documentation.ferlium",
+          "match": "///.*$"
+        },
+        {
+          "name": "comment.line.double-slash.ferlium",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.ferlium",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.interpolated.ferlium",
+          "begin": "f\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ferlium",
+              "match": "\\\\."
+            },
+            {
+              "name": "meta.interpolation.ferlium",
+              "begin": "\\{",
+              "end": "\\}",
+              "beginCaptures": {
+                "0": { "name": "punctuation.definition.interpolation.begin.ferlium" }
+              },
+              "endCaptures": {
+                "0": { "name": "punctuation.definition.interpolation.end.ferlium" }
+              },
+              "patterns": [
+                { "include": "$self" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.double.ferlium",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.ferlium",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.integer.ferlium",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.ferlium",
+          "match": "\\b(if|else|match|for|in|loop|return|soft_break)\\b"
+        },
+        {
+          "name": "keyword.declaration.ferlium",
+          "match": "\\b(fn|let|mut|struct|enum|impl)\\b"
+        },
+        {
+          "name": "keyword.operator.logical.ferlium",
+          "match": "\\b(and|or|not)\\b"
+        },
+        {
+          "name": "keyword.operator.cast.ferlium",
+          "match": "\\b(as)\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arrow.ferlium",
+          "match": "->|=>"
+        },
+        {
+          "name": "keyword.operator.comparison.ferlium",
+          "match": "==|!=|<=|>=|<|>"
+        },
+        {
+          "name": "keyword.operator.assignment.compound.ferlium",
+          "match": "\\+=|-=|\\*=|/="
+        },
+        {
+          "name": "keyword.operator.assignment.ferlium",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.arithmetic.ferlium",
+          "match": "\\+|-|\\*|/|%"
+        },
+        {
+          "name": "keyword.operator.pipe.ferlium",
+          "match": "\\|>"
+        },
+        {
+          "name": "keyword.operator.range.ferlium",
+          "match": "\\.\\."
+        },
+        {
+          "name": "keyword.operator.path.ferlium",
+          "match": "::"
+        },
+        {
+          "name": "keyword.operator.property.ferlium",
+          "match": "@"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.separator.ferlium",
+          "match": "[;,]"
+        },
+        {
+          "name": "punctuation.accessor.ferlium",
+          "match": "\\."
+        },
+        {
+          "name": "punctuation.type.ferlium",
+          "match": ":"
+        }
+      ]
+    },
+    "function-definition": {
+      "patterns": [
+        {
+          "match": "\\b(fn)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "entity.name.function.ferlium" }
+          }
+        }
+      ]
+    },
+    "function-call": {
+      "patterns": [
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "captures": {
+            "1": { "name": "entity.name.function.call.ferlium" }
+          }
+        }
+      ]
+    },
+    "type-definition": {
+      "patterns": [
+        {
+          "match": "\\b(struct|enum)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "entity.name.type.ferlium" }
+          }
+        },
+        {
+          "match": "\\b(impl)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "entity.name.type.ferlium" }
+          }
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "support.type.primitive.ferlium",
+          "match": "\\b(int|float|bool|string|Variant)\\b"
+        },
+        {
+          "name": "entity.name.type.ferlium",
+          "match": "\\b[A-Z][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.ferlium",
+          "match": "\\b(true|false)\\b"
+        },
+        {
+          "name": "constant.language.option.ferlium",
+          "match": "\\b(Some|None)\\b"
+        },
+        {
+          "name": "constant.language.ordering.ferlium",
+          "match": "\\b(Less|Equal|Greater)\\b"
+        },
+        {
+          "name": "constant.language.control-flow.ferlium",
+          "match": "\\b(Continue|Break)\\b"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.other.ferlium",
+          "match": "\\b[a-z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}

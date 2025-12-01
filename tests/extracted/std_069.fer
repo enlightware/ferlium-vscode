@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:243"
+
+0..2 |> iter() |> all(|x| x >= 0)

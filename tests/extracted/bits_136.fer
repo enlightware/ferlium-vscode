@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:328"
+
+let x = clear_bit(15, 2); x

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from math.rs:83"
+
+min(1.0, 1.0)

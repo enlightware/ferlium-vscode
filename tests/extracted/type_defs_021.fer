@@ -1,0 +1,6 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:273"
+
+enum Player {
+    Basic(string),
+    State(bool)
+}

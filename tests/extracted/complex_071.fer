@@ -1,0 +1,8 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:380"
+
+fn outer() {
+    let inner = || { return 42 };
+    let result = inner();
+    result + 1
+}
+outer()

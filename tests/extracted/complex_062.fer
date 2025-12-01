@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:261"
+
+fn add(a, b) { a + b }
+fn f() {
+    add({ return 100 }, { panic("should not reach") })
+}
+f()

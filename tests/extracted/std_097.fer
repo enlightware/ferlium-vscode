@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:479"
+
+struct Age(float) serialize(Age(1.0))

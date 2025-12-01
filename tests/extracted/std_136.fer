@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:324"
+
+string_replace("hello world", "world", "world!")

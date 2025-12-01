@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:90"
+
+match 0 { 0 => (1,2), _ => (2,3) }

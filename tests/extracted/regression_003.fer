@@ -1,0 +1,5 @@
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:63"
+
+enum Action { Quit }
+
+Action::Quit

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:530"
+
+(deserialize(serialize( (1, ) )): (int, ))

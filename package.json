@@ -1,0 +1,63 @@
+{
+  "name": "ferlium",
+  "displayName": "Ferlium",
+  "description": "Syntax highlighting for the Ferlium programming language",
+  "version": "0.1.0",
+  "publisher": "enlightware",
+  "license": "Apache-2.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enlightware/ferlium-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/enlightware/ferlium-vscode/issues"
+  },
+  "homepage": "https://github.com/enlightware/ferlium",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "ferlium",
+    "fer",
+    "syntax",
+    "highlighting"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ferlium",
+        "aliases": [
+          "Ferlium",
+          "ferlium"
+        ],
+        "extensions": [
+          ".fer"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ferlium",
+        "scopeName": "source.ferlium",
+        "path": "./syntaxes/ferlium.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "validate-grammar": "npx vscode-tmgrammar-test -g syntaxes/ferlium.tmLanguage.json 'tests/**/*.fer'",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0",
+    "vscode-tmgrammar-test": "^0.1.2"
+  },
+  "overrides": {
+    "undici": "^5.28.0"
+  }
+}

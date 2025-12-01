@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:552"
+
+(deserialize(serialize( { b: true, a: 1 } )): {a: int, b: bool})

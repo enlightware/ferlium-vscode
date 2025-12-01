@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1257"
+
+fn d(x) { 2 * x } fn s(x) { x + 1 } d(s(s(1)))

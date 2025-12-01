@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:188"
+
+fn set_1(a) { a = 1 } fn call_set_1(a) { a = 2; set_1(a) } let mut a = 0; call_set_1(a); a

@@ -1,0 +1,4 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:679"
+
+struct Person(string)
+struct Creature(Person)

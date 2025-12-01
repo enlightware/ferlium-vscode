@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:489"
+
+enum SimpleColor { Red, Green, Blue } serialize(SimpleColor::Blue)
