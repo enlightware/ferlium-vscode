@@ -11,7 +11,7 @@ Syntax highlighting support for the [Ferlium](https://github.com/enlightware/fer
 
 ## Installation
 
-### From VS Code Marketplace
+### From VS Code marketplace
 
 Search for "Ferlium" in the VS Code extensions panel.
 
@@ -21,7 +21,7 @@ Search for "Ferlium" in the VS Code extensions panel.
 2. In VS Code, go to Extensions → `...` menu → "Install from VSIX..."
 3. Select the downloaded file
 
-### From Source
+### From source
 
 ```bash
 git clone https://github.com/enlightware/ferlium-vscode.git
@@ -33,6 +33,8 @@ code --install-extension ferlium-*.vsix
 
 ## Development
 
+A `Makefile` is provided for common tasks.
+
 ### Prerequisites
 
 - Node.js (v18 or later)
@@ -41,27 +43,37 @@ code --install-extension ferlium-*.vsix
 ### Setup
 
 ```bash
-npm install
+make install
 ```
 
-### Validate Grammar
+### Update test files
+
+To update the grammar test files from the unit tests from Ferlium repository, run:
+
+```bash
+make update-test-snippets
+```
+
+The `FERLIUM_PATH` variable in the `Makefile` should point to the local Ferlium repository.
+
+### Validate grammar
 
 To test the TextMate grammar against test files:
 
 ```bash
-npm run validate-grammar
+make test
 ```
 
-### Package Extension
+### Package extension
 
 ```bash
-npm run package
+make package
 ```
 
-### Publish Extension
+### Publish extension
 
 ```bash
-npm run publish
+make publish
 ```
 
 ## License
