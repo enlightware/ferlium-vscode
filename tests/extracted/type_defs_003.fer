@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:550"
-
-struct Email(string) Email(string_concat("h", "i"))

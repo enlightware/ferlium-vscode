@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:66"
-
-mod(2, 3)

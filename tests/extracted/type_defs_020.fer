@@ -1,6 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:218"
-
-enum Message {
-    Quit,
-    Flag { v0: bool, v1: bool }
-}

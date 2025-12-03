@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:array_iterator:26"
+
+fn it(x) {
+	for i in x { }
+}
+
+it([1.0, 2.0])

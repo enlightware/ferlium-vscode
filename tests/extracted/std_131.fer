@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:294"
-
-string_concat("hello ", "world!")

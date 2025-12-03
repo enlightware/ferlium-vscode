@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:87"
-
-match 1 { 0 => |x| x * 2, _ => |x| x * x } (3)

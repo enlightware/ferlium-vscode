@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:int_bit:135"
+
+(bit(3): int)

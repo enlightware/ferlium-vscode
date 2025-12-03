@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:84"
-
-min(1.0, 2.0)

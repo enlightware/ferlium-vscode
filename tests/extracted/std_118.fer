@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:559"
-
-struct Age(float) (deserialize(serialize((1.0, ))): Age)

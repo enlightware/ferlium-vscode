@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:300"
-
-clear_bit(true, 1)

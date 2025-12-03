@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:199"
-
-2 |> (if false { |x| x } else { |x| -x }) ()

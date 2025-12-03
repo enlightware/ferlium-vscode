@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:120"
-
-[1] == [2]

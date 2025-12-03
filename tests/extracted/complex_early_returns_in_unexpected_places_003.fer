@@ -1,0 +1,17 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:273"
+
+fn f() {
+    let a = 1;
+    {
+        let b = 2;
+        {
+            let c = 3;
+            return a + b + c;
+            let d = 4;
+        };
+        let e = 5;
+    };
+    let f = 6;
+    99
+}
+f()

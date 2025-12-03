@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:assignment:679"
+
+let mut a = [[1, 2], [3, 4]]; a[0][1] = 5; a[0]

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_bit_xor:204"
+
+bit_xor(false, true)

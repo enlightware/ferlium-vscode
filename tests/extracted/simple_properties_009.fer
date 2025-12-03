@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:properties:1379"
+
+@props::my_scope.my_array = array_concat(@props::my_scope.my_array, [3, 4])

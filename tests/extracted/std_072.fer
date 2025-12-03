@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:246"
-
-2..5 |> iter() |> count()

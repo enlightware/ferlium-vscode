@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:127"
-
-array_map([(1, 2), (2, 3), (3, 4)], |v| v.0 + v.1)

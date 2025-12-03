@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1157"
+
+let v = || 0; mod(1, v())

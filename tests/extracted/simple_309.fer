@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1127"
-
-let a = [1, 2]; a[-3]

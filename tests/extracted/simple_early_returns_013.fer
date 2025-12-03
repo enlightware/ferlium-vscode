@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:early_returns:1483"
+
+fn f() { for i in 0..10 { if i > 100 { return i } }; 99 } f()

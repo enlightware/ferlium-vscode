@@ -1,0 +1,13 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:create_record_struct_values:488"
+
+struct Person {
+    name: string,
+    age: int,
+    is_active: bool
+}
+
+Person {
+    name: "Alice",
+    age: 20 + 10,
+    is_active: true
+}

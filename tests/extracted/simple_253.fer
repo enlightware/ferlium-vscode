@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:699"
-
-let mut s = 0; for i in -1..-4 { s = s + i }; s

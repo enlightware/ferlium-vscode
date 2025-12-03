@@ -1,0 +1,14 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:minimalist_variants_and_trait_constraints:206"
+
+fn count_somes(a) {
+    let mut sum = 0;
+    for option in a {
+        match option {
+            Some(a) => sum = sum + 1,
+            None => ()
+        }
+    };
+    sum
+}
+
+count_somes([None, Some(true), None, None, Some(false)])

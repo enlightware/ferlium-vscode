@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:49"
-
-idiv(idiv(12, 3), 2)

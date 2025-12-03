@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:first_class_functions:736"
+
+fn my_add(x, y) {
+            x + y
+        }
+        let x = my_add;
+        x(1, 2)

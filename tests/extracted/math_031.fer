@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:61"
-
-rem(-3, 3)

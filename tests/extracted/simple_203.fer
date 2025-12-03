@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:516"
-
-let f = |x, y| (y == x.1.0); f((1,(2,1)), 2)

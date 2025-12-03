@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:434"
-
-match testing::some_int(1) { Some(x) => x, None => 0 }

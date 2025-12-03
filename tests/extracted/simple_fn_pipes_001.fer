@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:fn_pipes:1341"
+
+1 |> add(1)

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_iter:479"
+
+let s = "ab"; let mut it = string_iter(s); (string_iterator_next(it), string_iterator_next(it), string_iterator_next(it))

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1151"
+
+let v = || 0.0; 1.0 / v()

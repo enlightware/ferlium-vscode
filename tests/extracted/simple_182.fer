@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:417"
-
-let a = -1; match a { -1 => true, 0 => false, -3 => false, 7 => false, _ => false }

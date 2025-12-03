@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:string_formatting:1271"
+
+fn nbr(x) { f" #{x}" } nbr(3)

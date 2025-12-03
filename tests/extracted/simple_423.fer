@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1224"
-
-let a = 1; let b = true; f"hello {a} world {b}"

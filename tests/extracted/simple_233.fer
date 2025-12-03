@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:645"
-
-let a = 3; let f = || { let b = 1; || a + b }; (f()(): int)

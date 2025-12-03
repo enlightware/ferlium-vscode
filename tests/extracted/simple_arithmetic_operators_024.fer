@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:arithmetic_operators:303"
+
+1.0+2.0*3.0

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:early_returns:1520"
+
+let f = || { return 42 }; f()

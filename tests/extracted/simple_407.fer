@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1459"
-
-fn f(x) { if x < 0 { return 0 }; if x > 10 { return 10 }; x } f(-5)

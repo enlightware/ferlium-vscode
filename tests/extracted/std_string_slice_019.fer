@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_slice:435"
+
+string_slice("🇫🇷", 0, 1)

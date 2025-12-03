@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:if_expr:360"
+
+if 1 != 2 { 1 } else { 2 }

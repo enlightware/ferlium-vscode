@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:593"
-
-struct Age(int) struct Person(string, Age) Person("John", Age(30)).0

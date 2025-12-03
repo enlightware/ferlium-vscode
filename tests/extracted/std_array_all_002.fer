@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_all:167"
+
+array_all([1], |x| x == 1)

@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:79"
-
-match 5 { 0 => { let a = 1; a }, _ => { let a = 2; 2 } }

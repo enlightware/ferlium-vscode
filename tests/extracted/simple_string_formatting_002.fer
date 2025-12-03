@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:string_formatting:1264"
+
+let a = 1; let b = true; f"hello {a} world {b}"

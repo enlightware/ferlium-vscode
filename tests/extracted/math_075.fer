@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:126"
-
-fn round_trip(x) { round(from_int(x)) } round_trip(1)

@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1295"
-
-fn f(a) { let p = g(a); } fn g(a) { 0 }

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_prepend:49"
+
+let mut a = []; array_prepend(a, 1); a

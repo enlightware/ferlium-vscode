@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:269"
-
-contains([-3.0, 3.0, 1.0], 1.0)

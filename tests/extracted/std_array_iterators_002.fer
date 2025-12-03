@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_iterators:192"
+
+let a = [1.0, 2.0, 3.0]; let mut it = array_iter(a); (next(it), next(it))

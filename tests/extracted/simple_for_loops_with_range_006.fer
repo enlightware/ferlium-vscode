@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:for_loops_with_range:713"
+
+let mut a = []; for i in 5..2 { array_append(a, i) }; a

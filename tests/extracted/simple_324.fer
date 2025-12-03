@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1177"
-
-log(if false { abort() } else { 2 })

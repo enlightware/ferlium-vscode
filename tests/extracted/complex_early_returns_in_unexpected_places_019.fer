@@ -1,0 +1,10 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:494"
+
+fn f(x) {
+    match x {
+        0 => 1,
+        1 => { return 10 + 5 },
+        _ => 2
+    }
+}
+f(1)

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:assignment:667"
+
+let mut a = 1; a = 2

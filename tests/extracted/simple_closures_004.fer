@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:closures:616"
+
+fn f() { let b = 1; |x| x + b } f()(1.0)

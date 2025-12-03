@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:recursive_functions:1312"
+
+fn fact(x) { if x > 1 { x * fact(x-1) } else { 1 } } fact(5)

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:string_literals:1256"
+
+"hello \"world\""

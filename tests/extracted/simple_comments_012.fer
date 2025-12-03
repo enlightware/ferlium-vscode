@@ -1,0 +1,8 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:comments:70"
+
+/*
+comment
+*/
+/* yeah */ 42 // comment
+/* sure */
+// ///comment

@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:177"
-
-fn p(a, i) { let x = a[i]; 0 }

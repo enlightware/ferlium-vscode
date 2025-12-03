@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:early_returns:1517"
+
+fn f(x, y) { return x + y } f(3, 4)

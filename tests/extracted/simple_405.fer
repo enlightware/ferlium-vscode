@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1449"
-
-fn f(x) { match x { true => return 1, false => 2 } } f(false)

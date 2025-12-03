@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:264"
-
-let mut a = 0; let mut b = 0; if false and { a = 1; true } { b = 1 }; (a, b)

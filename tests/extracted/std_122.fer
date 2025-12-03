@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:573"
-
-enum SimpleColor { Red, Green, Blue } (deserialize(serialize(Blue)): SimpleColor)

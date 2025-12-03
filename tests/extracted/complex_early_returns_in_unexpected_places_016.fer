@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:457"
+
+fn f() {
+    let arr = [1, 2, 3];
+    array_map(arr, |x| { if x == 2 { return 42 } else { x } })
+}
+f()

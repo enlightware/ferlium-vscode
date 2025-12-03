@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:43"
-
-let mut a = [2]; array_append(a, 1); a

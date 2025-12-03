@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:209"
-
-let a = [1, 2, 3]; let mut it = iter(a); (next(it), next(it))

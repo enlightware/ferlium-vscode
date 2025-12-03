@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:fn_pipes:1344"
+
+let mut a = 1; a = 2 |> mul(3) |> add(1) |> div(2); a

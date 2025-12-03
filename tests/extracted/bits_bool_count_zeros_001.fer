@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_count_zeros:269"
+
+count_zeros(false)

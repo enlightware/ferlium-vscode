@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:525"
-
-fn a(x) { x.0 } fn b(x) { x.1 } fn c(x) { (a(x), b(x)) } c((1,2))

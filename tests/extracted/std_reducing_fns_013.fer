@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:276"
+
+[2, 5] |> iter() |> sum()

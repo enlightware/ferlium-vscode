@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:795"
-
-let l2 = |v| { let sq = |x| x * x; sq(v.x) + sq(v.y) }; l2({x:1, y:2})

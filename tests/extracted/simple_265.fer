@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:772"
-
-(|| {a:1, b:2})().b

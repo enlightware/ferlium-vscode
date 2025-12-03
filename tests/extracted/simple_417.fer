@@ -1,7 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:736"
-
-fn my_add(x, y) {
-            x + y
-        }
-        let x = my_add;
-        x(1, 2)

@@ -1,0 +1,15 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:match_tuples:452"
+
+let mut a = [];
+for l in [false, true] {
+    for r in [false, true] {
+        let v = match (l, r) {
+            (true, true) => 1,
+            (true, false) => 2,
+            (false, true) => 3,
+            (false, false) => 4,
+        };
+        array_append(a, v);
+    }
+};
+a

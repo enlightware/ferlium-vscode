@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:445"
+
+fn f() {
+    let arr = [10, 20, 30];
+    arr[{ return 42 }]
+}
+f()

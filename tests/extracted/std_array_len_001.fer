@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_len:94"
+
+let a = [1]; array_len(a)

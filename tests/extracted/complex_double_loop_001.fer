@@ -1,0 +1,13 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:double_loop:228"
+
+fn sums() {
+    let mut sum = 0;
+    for i in 1..3 {
+        for j in 1..4 {
+            sum = sum + i * j;
+        }
+    };
+    sum
+}
+
+sums()

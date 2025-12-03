@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1325"
-
-fn f(x) { x * 2 } @props::my_scope.my_var = f(@props::my_scope.my_var)

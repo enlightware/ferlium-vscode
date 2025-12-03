@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:792"
-
-fn e(v) { v.toto } (e,).0({toto: 3})

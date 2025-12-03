@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:1231"
-
-fn nbr(x) { f" #{x}" } nbr(3)

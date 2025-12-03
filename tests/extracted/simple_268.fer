@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:778"
-
-fn s(v) { v.x + v.y } s({x:1, y:2})

@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:707"
-
-fn s() { 2 } fn e() { 5 } let mut a = []; for i in s()..e() { array_append(a, i) }; a

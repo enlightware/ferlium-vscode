@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:lambdas_in_containers:62"
+
+[|| 1][0]()

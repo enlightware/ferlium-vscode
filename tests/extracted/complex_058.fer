@@ -1,8 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:106"
-
-enum Action {
-    Move { x: float, y: float }
-}
-match (Action::Move { x: 5, y: 6 }) {
-    Move { x, .. } => x
-}

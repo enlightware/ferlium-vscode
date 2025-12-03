@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:827"
-
-fn l(v) { ((|v| v.x)(v), (|v| v.y)(v)) } l({x:1, y:2})

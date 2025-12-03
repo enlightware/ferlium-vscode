@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_pop_front:85"
+
+let mut a = [1, 2, 3]; array_pop_front(a)

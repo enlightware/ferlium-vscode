@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:111"
-
-clamp(-1.5, -1.5, 3.0)

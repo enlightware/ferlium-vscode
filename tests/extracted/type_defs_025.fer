@@ -1,8 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:645"
-
-struct Age(int)
-struct Person1 { age: Age }
-struct Person2 { age: Age }
-
-fn age(d) { d.age.0 }
-fn age1(d: Person1) { d.age.0 }

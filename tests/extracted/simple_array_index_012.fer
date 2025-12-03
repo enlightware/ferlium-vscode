@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:array_index:1246"
+
+let i = -1; [1, 3][i]

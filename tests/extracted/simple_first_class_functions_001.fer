@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:first_class_functions:756"
+
+fn fact(i) { if i > 1 { i * ((fact,).0)(i - 1) } else { 1 } } fact(3)

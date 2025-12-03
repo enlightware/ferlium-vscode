@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from math.rs:int_div:54"
+
+rem(1, 3)

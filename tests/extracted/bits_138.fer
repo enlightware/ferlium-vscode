@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:332"
-
-count_ones(bit_and(5, 3))

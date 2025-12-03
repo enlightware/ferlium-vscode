@@ -1,0 +1,11 @@
+// SYNTAX TEST "source.ferlium" "Extracted from algorithm.rs:factorial:26"
+
+fn factorial(n) {
+    if n <= 1 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
+
+factorial(5)

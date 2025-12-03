@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:mutability:214"
+
+let mut a = 1 ; a = 2; a

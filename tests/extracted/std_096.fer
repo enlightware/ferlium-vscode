@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:466"
-
-serialize({a: 1, b: 2.0, c: true})

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:cast_as_precedence:1433"
+
+let x: int = -3; x as float

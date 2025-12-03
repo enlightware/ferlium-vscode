@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:local_variables:136"
+
+let mut a = [1, 2]; a = [3]; a == [3]

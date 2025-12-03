@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:590"
-
-fn a() { |x| x + x } a()((1: int))

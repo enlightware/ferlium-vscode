@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:138"
-
-let mut a = (1, true); a = (2, false); a == (2, false)

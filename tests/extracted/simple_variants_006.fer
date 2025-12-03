@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:variants:908"
+
+MyVariant2 { a: 1.0 }

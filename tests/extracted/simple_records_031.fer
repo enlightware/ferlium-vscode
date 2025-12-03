@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:records:854"
+
+let b = 2; {a: 1, b}.a

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:269"
+
+0..2 |> iter() |> all(|x| x >= 0)

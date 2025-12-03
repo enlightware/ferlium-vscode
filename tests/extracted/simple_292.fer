@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:862"
-
-MyVariant2("hi", 1.0)

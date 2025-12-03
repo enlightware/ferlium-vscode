@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:619"
-
-let mut a = 1; let f = || a; a = 2; f()

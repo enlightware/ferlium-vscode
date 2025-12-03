@@ -1,7 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:529"
-
-fn f() {
-    let a = [1, 2, 3];
-    a[(if false { return 42 } else { 0 })]
-}
-f()

@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:logic_operators:256"
+
+let mut a = 0; let mut b = 0; if false or { a = 1; false } { b = 1 }; (a, b)

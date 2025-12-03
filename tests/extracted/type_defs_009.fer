@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:580"
-
-struct Email(string) Email("hi").0

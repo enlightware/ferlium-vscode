@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:147"
-
-array_any([1, 2, 3], |x| x == 1)

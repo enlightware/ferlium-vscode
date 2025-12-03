@@ -1,7 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:457"
-
-fn f() {
-    let arr = [1, 2, 3];
-    array_map(arr, |x| { if x == 2 { return 42 } else { x } })
-}
-f()

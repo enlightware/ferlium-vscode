@@ -1,3 +1,0 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:324"
-
-let x = set_bit(0, 3); test_bit(x, 2)
