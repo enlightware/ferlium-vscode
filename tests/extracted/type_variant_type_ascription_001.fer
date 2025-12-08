@@ -1,0 +1,19 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type.rs:variant_type_ascription:390"
+
+fn score(value) -> int {
+    match value {
+        Some { value } => value,
+        Pair(x, y) => x + y,
+        Empty => 0,
+    }
+}
+
+let record: Some { value: int } | Pair(int, int) | Empty = Some { value: 40 };
+let tuple: Some { value: int } | Pair(int, int) | Empty = Pair(1, 2);
+let unit: Some { value: int } | Pair(int, int) | Empty = Empty;
+
+(
+    score(record),
+    score(tuple),
+    score(unit),
+)
