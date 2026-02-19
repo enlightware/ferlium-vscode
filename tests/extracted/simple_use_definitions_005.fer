@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:use_definitions:1697"
+
+use deep::deeper::level2::Pair; Pair(5, 6)

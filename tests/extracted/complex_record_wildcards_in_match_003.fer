@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:record_wildcards_in_match:106"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:record_wildcards_in_match:116"
 
 enum Action {
     Move { x: float, y: float }

@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_iter:501"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_iter:656"
 
 let mut it = string_iter("🇫🇷"); string_iterator_next(it)

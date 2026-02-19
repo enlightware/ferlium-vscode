@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_any:145"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_any:215"
 
 array_any(([]: [int]), |x| x == 1)

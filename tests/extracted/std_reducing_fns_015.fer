@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:278"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:379"
 
 [0, 1, 3] |> iter() |> find(|x| x > 1)

@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_case_conversion:521"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_case_conversion:681"
 
 lowercase("hello World!")

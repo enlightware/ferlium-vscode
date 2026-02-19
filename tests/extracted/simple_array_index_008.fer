@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:array_index:1242"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:array_index:1554"
 
 let a = [1, 3]; a[0]

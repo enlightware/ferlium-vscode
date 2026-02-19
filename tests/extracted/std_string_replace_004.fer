@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_replace:393"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_replace:523"
 
 string_replace("hello world", "world", "world!!")

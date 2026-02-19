@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_concat:107"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:array_concat:166"
 
 array_concat([1, 2], [3])

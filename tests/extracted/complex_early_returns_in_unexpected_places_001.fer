@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:250"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:289"
 
 fn f() {
     (if true { return 42 } else { |x| x })(1)

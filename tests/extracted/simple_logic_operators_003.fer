@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:logic_operators:234"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:logic_operators:260"
 
 not not true

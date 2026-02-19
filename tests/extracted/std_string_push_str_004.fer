@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_push_str:372"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_push_str:501"
 
 let mut s = "hello"; string_push_str(s, " world!"); s

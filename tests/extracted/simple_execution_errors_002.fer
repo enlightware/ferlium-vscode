@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1149"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1432"
 
 panic("oh no")

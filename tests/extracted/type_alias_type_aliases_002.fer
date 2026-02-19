@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_alias.rs:type_aliases:37"
+
+type Point = (int, int);
+
+fn add_coords(p: Point) -> int {
+    p.0 + p.1
+}
+
+add_coords((10, 20))

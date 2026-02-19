@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_serialize:636"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_serialize:805"
 
 serialize(Blue)

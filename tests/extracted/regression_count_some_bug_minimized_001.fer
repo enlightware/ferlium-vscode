@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:count_some_bug_minimized:41"
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:count_some_bug_minimized:43"
 
 fn count_some(a: [None | Some(int)]) {
 	let mut sum = 0;

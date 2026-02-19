@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_alias.rs:type_aliases:76"
+
+type IntArray = [int];
+
+fn first(arr: IntArray) -> int {
+    arr[0]
+}
+
+first([1, 2, 3])

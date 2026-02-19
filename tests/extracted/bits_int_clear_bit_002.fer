@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:int_clear_bit:155"
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:int_clear_bit:168"
 
 clear_bit(2, 1)

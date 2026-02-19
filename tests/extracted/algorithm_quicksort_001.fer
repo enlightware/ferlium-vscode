@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from algorithm.rs:quicksort:45"
+// SYNTAX TEST "source.ferlium" "Extracted from algorithm.rs:quicksort:46"
 
 fn swap(a, i, j) {
     let temp = a[i];

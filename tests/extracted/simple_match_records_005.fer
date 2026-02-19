@@ -1,0 +1,15 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:match_records:573"
+
+let mut a = [];
+for l in [false, true] {
+    for r in [false, true] {
+        let v = match { x: l, y: r } {
+            { x: true,  y: true  } => 1,
+            { x: true,  y: false } => 2,
+            { x: false, y: true  } => 3,
+            { x: false, y: false } => 4,
+        };
+        array_append(a, v);
+    }
+};
+a

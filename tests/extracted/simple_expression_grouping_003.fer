@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:expression_grouping:343"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:expression_grouping:373"
 
 (((1)))

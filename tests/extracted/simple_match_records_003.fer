@@ -1,0 +1,3 @@
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:match_records:568"
+
+match { x: true } { { x: true } => 1, { x: false } => 0 }

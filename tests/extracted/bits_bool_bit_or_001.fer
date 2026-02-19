@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_bit_or:194"
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_bit_or:210"
 
 bit_or(false, false)

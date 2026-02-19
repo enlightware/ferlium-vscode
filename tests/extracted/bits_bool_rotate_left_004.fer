@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_rotate_left:246"
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_rotate_left:267"
 
 rotate_left(true, 1)

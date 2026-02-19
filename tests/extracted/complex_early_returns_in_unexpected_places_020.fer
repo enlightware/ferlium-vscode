@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:509"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:548"
 
 fn f() {
     let a = [1, 2, 3];

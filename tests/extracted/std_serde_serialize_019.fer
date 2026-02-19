@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_serialize:635"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_serialize:804"
 
 enum SimpleColor { Red, Green, Blue } serialize(SimpleColor::Blue)

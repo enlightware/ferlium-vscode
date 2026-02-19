@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:double_loop:228"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:double_loop:266"
 
 fn sums() {
     let mut sum = 0;

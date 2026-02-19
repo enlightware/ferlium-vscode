@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:585"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:739"
 
 (|x| x.1)((1,2))

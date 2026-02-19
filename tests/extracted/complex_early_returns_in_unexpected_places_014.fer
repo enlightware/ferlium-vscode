@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:431"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:470"
 
 fn f() -> (int, bool) {
     if true {

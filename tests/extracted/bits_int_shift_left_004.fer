@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:int_shift_left:71"
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:int_shift_left:76"
 
 shift_left(1, 3)

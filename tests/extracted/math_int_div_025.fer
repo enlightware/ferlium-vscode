@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:int_div:71"
+// SYNTAX TEST "source.ferlium" "Extracted from math.rs:int_div:72"
 
 mod(-2, 3)

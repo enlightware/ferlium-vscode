@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:contains:299"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:contains:421"
 
 contains("", "a")

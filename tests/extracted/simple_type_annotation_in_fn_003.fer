@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:type_annotation_in_fn:163"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:type_annotation_in_fn:180"
 
 fn id(x: [int]) { x } id([])

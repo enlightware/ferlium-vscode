@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:380"
+// SYNTAX TEST "source.ferlium" "Extracted from complex.rs:early_returns_in_unexpected_places:419"
 
 fn outer() {
     let inner = || { return 42 };

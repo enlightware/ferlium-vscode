@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:if_expr:362"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:if_expr:393"
 
 if 2 < 2 { 1 } else { 2 }

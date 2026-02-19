@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:array_iterator:26"
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:array_iterator:27"
 
 fn it(x) {
 	for i in x { }

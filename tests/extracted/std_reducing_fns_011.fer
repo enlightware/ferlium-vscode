@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:274"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:reducing_fns:374"
 
 [2, 5] |> iter() |> iter() |> count()

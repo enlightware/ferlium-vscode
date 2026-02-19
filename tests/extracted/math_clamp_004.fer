@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from math.rs:clamp:105"
+// SYNTAX TEST "source.ferlium" "Extracted from math.rs:clamp:109"
 
 clamp(2, -1, 3)

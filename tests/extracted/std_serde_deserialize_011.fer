@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_deserialize:686"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:serde_deserialize:865"
 
 (deserialize(serialize( {a: 1, } )): {a: int})

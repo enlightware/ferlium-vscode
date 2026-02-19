@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_combined_operations:345"
+// SYNTAX TEST "source.ferlium" "Extracted from bits.rs:bool_combined_operations:390"
 
 count_ones(bit_or(true, false))

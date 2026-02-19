@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:to_string:1284"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:to_string:1612"
 
 to_string(-17)

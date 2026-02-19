@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from type.rs:ret_type_overloading:429"
+// SYNTAX TEST "source.ferlium" "Extracted from type.rs:ret_type_overloading:437"
 
 fn f() { let a = 0; a }
 ((f(): int), (f(): float))

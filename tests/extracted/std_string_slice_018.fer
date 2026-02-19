@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_slice:424"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_slice:576"
 
 string_slice("a农", 0, 2)

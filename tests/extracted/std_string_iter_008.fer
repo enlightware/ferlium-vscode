@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_iter:512"
+// SYNTAX TEST "source.ferlium" "Extracted from std.rs:string_iter:667"
 
 len("héllo 🇫🇷, 农")

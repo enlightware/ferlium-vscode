@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:enum_constructors:63"
+// SYNTAX TEST "source.ferlium" "Extracted from regression.rs:enum_constructors:66"
 
 enum Action { Quit }
 

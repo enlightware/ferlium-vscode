@@ -1,0 +1,12 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_alias.rs:type_aliases:61"
+
+type Shape = Circle(float) | Rectangle { width: float, height: float };
+
+fn area(s: Shape) -> float {
+    match s {
+        Circle(r) => 3.14 * r * r,
+        Rectangle { width, height } => width * height,
+    }
+}
+
+area(Circle(5.0))

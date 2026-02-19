@@ -1,0 +1,11 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_alias.rs:type_aliases:100"
+
+type Coord = { x: int, y: int };
+type Entry = (string, Coord);
+type Entries = [Entry];
+
+fn get_first_x(entries: Entries) -> int {
+    entries[0].1.x
+}
+
+get_first_x([("point1", { x: 5, y: 10 })])
