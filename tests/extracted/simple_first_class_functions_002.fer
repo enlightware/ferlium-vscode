@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:first_class_functions:958"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:first_class_functions:972"
 
 fn my_add(x, y) {
             x + y

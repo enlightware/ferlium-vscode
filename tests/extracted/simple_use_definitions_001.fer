@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:use_definitions:1683"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:use_definitions:1697"
 
 use deep::level1::level; level()

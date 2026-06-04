@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:assignment:841"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:assignment:855"
 
 let mut a = 1; let b = 2; a = b; a

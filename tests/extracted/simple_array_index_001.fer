@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:array_index:1547"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:array_index:1561"
 
 [1][0]

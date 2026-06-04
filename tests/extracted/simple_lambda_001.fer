@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:716"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:730"
 
 let f = || 1; f()

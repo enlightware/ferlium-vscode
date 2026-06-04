@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:records:1052"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:records:1066"
 
 fn my_sum(i, l) { if i < l.count { my_sum(i + 1, l) + 1 } else { 0 } } my_sum(0, {count: 4})

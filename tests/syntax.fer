@@ -95,3 +95,47 @@ fn casting(x: int) -> float {
     x as float
 //    ^^ keyword.operator.cast.ferlium
 }
+
+#[default(note = "new")]
+//^^^^^^^ entity.name.function.attribute.ferlium
+pub type Maybe<T> = Some(T) | None;
+// <- keyword.declaration.ferlium
+//  ^^^^ keyword.declaration.ferlium
+//       ^^^^^ entity.name.type.ferlium
+//                          ^ keyword.operator.sum-type.ferlium
+
+pub trait Iterator<Self |-> Item> {
+// <- keyword.declaration.ferlium
+//  ^^^^^ keyword.declaration.ferlium
+//        ^^^^^^^^ entity.name.type.trait.ferlium
+//                      ^^^ keyword.operator.arrow.ferlium
+    const EMPTY: bool;
+//  ^^^^^ keyword.declaration.ferlium
+//        ^^^^^ variable.other.constant.ferlium
+    fn next(it: &mut Self) -> Option<Item> ! fallible;
+//  ^^ keyword.declaration.ferlium
+//              ^ keyword.operator.reference.ferlium
+//               ^^^ keyword.declaration.ferlium
+}
+
+use std::{array, *};
+// <- keyword.declaration.ferlium
+//     ^^ keyword.operator.path.ferlium
+
+fn updated_tokens() {
+    let bin = 0b1010;
+//            ^^^^^^ constant.numeric.integer.binary.ferlium
+    let hex = 0xff;
+//            ^^^^ constant.numeric.integer.hexadecimal.ferlium
+    let inclusive = 1..=10;
+//                   ^^^ keyword.operator.range.ferlium
+    let event = { r#type: "click" };
+//                ^^^^^^ variable.other.ferlium
+    'outer: loop {
+//  ^^^^^^ entity.name.label.ferlium
+        continue 'outer
+//      ^^^^^^^^ keyword.control.ferlium
+    };
+    effects_unsafe { bin }
+//  ^^^^^^^^^^^^^^ keyword.control.ferlium
+}

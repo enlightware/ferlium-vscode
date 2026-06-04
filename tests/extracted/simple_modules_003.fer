@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:modules:1627"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:modules:1641"
 
 fn a(x) { x + 1 } a(1)

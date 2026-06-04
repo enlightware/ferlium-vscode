@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1464"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:execution_errors:1478"
 
 let a = [1, 2]; a[-3]

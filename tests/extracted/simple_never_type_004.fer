@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:never_type:1511"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:never_type:1525"
 
 if false { abort() } else { 2 }

@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:tuple_projection:649"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:tuple_projection:663"
 
 fn f(v) { v.1.2.3 } ()

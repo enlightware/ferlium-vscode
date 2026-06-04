@@ -1,0 +1,8 @@
+// SYNTAX TEST "source.ferlium" "Extracted from type_defs.rs:projections_through_repr_in_match:638"
+
+struct S(bool)
+let s = S(true);
+match s {
+    (true,) => 1,
+    (false,) => 2
+}

@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:match_records:573"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:match_records:585"
 
 let mut a = [];
 for l in [false, true] {

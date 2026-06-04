@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:recursive_functions:1773"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:recursive_functions:1787"
 
 fn is_even(n) {
                 if n == 0 {

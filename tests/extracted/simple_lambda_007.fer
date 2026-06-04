@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:722"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:lambda:736"
 
 let f = |x, y| x + y; f(1, f(2, 3))

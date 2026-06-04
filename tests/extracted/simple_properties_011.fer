@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:properties:1847"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:properties:1861"
 
 @props::my_scope.my_array[0] = 5

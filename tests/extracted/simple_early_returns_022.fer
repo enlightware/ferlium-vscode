@@ -1,3 +1,3 @@
-// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:early_returns:2016"
+// SYNTAX TEST "source.ferlium" "Extracted from simple.rs:early_returns:2030"
 
 let f = || { return 42 }; f()

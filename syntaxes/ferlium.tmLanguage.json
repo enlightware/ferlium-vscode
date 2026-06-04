@@ -4,14 +4,21 @@
   "scopeName": "source.ferlium",
   "patterns": [
     { "include": "#comments" },
+    { "include": "#attributes" },
     { "include": "#strings" },
     { "include": "#numbers" },
     { "include": "#function-definition" },
+    { "include": "#trait-definition" },
+    { "include": "#type-alias-definition" },
     { "include": "#type-definition" },
+    { "include": "#impl-definition" },
+    { "include": "#use-declaration" },
+    { "include": "#associated-const" },
+    { "include": "#labels" },
     { "include": "#keywords" },
+    { "include": "#constants" },
     { "include": "#operators" },
     { "include": "#punctuation" },
-    { "include": "#constants" },
     { "include": "#function-call" },
     { "include": "#types" },
     { "include": "#variables" }
@@ -31,6 +38,36 @@
           "name": "comment.block.ferlium",
           "begin": "/\\*",
           "end": "\\*/"
+        }
+      ]
+    },
+    "attributes": {
+      "patterns": [
+        {
+          "name": "meta.attribute.ferlium",
+          "begin": "#\\[",
+          "end": "\\]",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.attribute.begin.ferlium" }
+          },
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.attribute.end.ferlium" }
+          },
+          "patterns": [
+            { "include": "#strings" },
+            {
+              "name": "entity.name.function.attribute.ferlium",
+              "match": "\\b(?:r#)?[a-zA-Z_][a-zA-Z0-9_]*\\b"
+            },
+            {
+              "name": "keyword.operator.assignment.ferlium",
+              "match": "="
+            },
+            {
+              "name": "punctuation.separator.ferlium",
+              "match": "[,()]"
+            }
+          ]
         }
       ]
     },
@@ -77,6 +114,14 @@
     "numbers": {
       "patterns": [
         {
+          "name": "constant.numeric.integer.binary.ferlium",
+          "match": "\\b0b[01]+\\b"
+        },
+        {
+          "name": "constant.numeric.integer.hexadecimal.ferlium",
+          "match": "\\b0x[0-9a-fA-F]+\\b"
+        },
+        {
           "name": "constant.numeric.integer.ferlium",
           "match": "\\b[0-9]+\\b"
         }
@@ -86,15 +131,15 @@
       "patterns": [
         {
           "name": "keyword.control.ferlium",
-          "match": "\\b(if|else|match|for|in|loop|return|soft_break)\\b"
+          "match": "\\b(if|else|match|for|in|loop|return|break|continue|effects_unsafe|soft_break)\\b"
         },
         {
           "name": "keyword.declaration.ferlium",
-          "match": "\\b(fn|let|mut|struct|enum|impl)\\b"
+          "match": "\\b(pub|fn|let|mut|struct|enum|type|trait|impl|use|const|where)\\b"
         },
         {
           "name": "keyword.operator.logical.ferlium",
-          "match": "\\b(and|or|not)\\b"
+          "match": "\\b(and|or|not)\\b|&&|\\|\\||!"
         },
         {
           "name": "keyword.operator.cast.ferlium",
@@ -106,7 +151,15 @@
       "patterns": [
         {
           "name": "keyword.operator.arrow.ferlium",
-          "match": "->|=>"
+          "match": "\\|->|->|=>"
+        },
+        {
+          "name": "keyword.operator.range.ferlium",
+          "match": "\\.\\.=?"
+        },
+        {
+          "name": "keyword.operator.pipe.ferlium",
+          "match": "\\|>"
         },
         {
           "name": "keyword.operator.comparison.ferlium",
@@ -121,16 +174,16 @@
           "match": "="
         },
         {
+          "name": "keyword.operator.reference.ferlium",
+          "match": "&"
+        },
+        {
           "name": "keyword.operator.arithmetic.ferlium",
           "match": "\\+|-|\\*|/|%"
         },
         {
-          "name": "keyword.operator.pipe.ferlium",
-          "match": "\\|>"
-        },
-        {
-          "name": "keyword.operator.range.ferlium",
-          "match": "\\.\\."
+          "name": "keyword.operator.sum-type.ferlium",
+          "match": "\\|"
         },
         {
           "name": "keyword.operator.path.ferlium",
@@ -155,16 +208,21 @@
         {
           "name": "punctuation.type.ferlium",
           "match": ":"
+        },
+        {
+          "name": "punctuation.bracket.ferlium",
+          "match": "[(){}\\[\\]]"
         }
       ]
     },
     "function-definition": {
       "patterns": [
         {
-          "match": "\\b(fn)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "match": "\\b(pub\\s+)?(fn)\\s+((?:r#)?[a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=<|\\()",
           "captures": {
             "1": { "name": "keyword.declaration.ferlium" },
-            "2": { "name": "entity.name.function.ferlium" }
+            "2": { "name": "keyword.declaration.ferlium" },
+            "3": { "name": "entity.name.function.ferlium" }
           }
         }
       ]
@@ -172,9 +230,33 @@
     "function-call": {
       "patterns": [
         {
-          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "match": "\\b((?:r#)?[a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
           "captures": {
             "1": { "name": "entity.name.function.call.ferlium" }
+          }
+        }
+      ]
+    },
+    "trait-definition": {
+      "patterns": [
+        {
+          "match": "\\b(pub\\s+)?(trait)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "keyword.declaration.ferlium" },
+            "3": { "name": "entity.name.type.trait.ferlium" }
+          }
+        }
+      ]
+    },
+    "type-alias-definition": {
+      "patterns": [
+        {
+          "match": "\\b(pub\\s+)?(type)\\s+([A-Z][a-zA-Z0-9_]*|[a-z_][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "keyword.declaration.ferlium" },
+            "3": { "name": "entity.name.type.ferlium" }
           }
         }
       ]
@@ -182,14 +264,19 @@
     "type-definition": {
       "patterns": [
         {
-          "match": "\\b(struct|enum)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
+          "match": "\\b(pub\\s+)?(struct|enum)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
           "captures": {
             "1": { "name": "keyword.declaration.ferlium" },
-            "2": { "name": "entity.name.type.ferlium" }
+            "2": { "name": "keyword.declaration.ferlium" },
+            "3": { "name": "entity.name.type.ferlium" }
           }
-        },
+        }
+      ]
+    },
+    "impl-definition": {
+      "patterns": [
         {
-          "match": "\\b(impl)\\s+([A-Z][a-zA-Z0-9_]*)\\b",
+          "match": "\\b(impl)\\s+(?:<[^>{}\\n]*>\\s*)?([A-Z][a-zA-Z0-9_]*)\\b",
           "captures": {
             "1": { "name": "keyword.declaration.ferlium" },
             "2": { "name": "entity.name.type.ferlium" }
@@ -197,11 +284,40 @@
         }
       ]
     },
+    "use-declaration": {
+      "patterns": [
+        {
+          "match": "\\b(use)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" }
+          }
+        }
+      ]
+    },
+    "associated-const": {
+      "patterns": [
+        {
+          "match": "\\b(const)\\s+((?:r#)?[A-Z_a-z][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": { "name": "keyword.declaration.ferlium" },
+            "2": { "name": "variable.other.constant.ferlium" }
+          }
+        }
+      ]
+    },
+    "labels": {
+      "patterns": [
+        {
+          "name": "entity.name.label.ferlium",
+          "match": "'[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    },
     "types": {
       "patterns": [
         {
           "name": "support.type.primitive.ferlium",
-          "match": "\\b(int|float|bool|string|Variant)\\b"
+          "match": "\\b(int|float|bool|string|unit|hash)\\b"
         },
         {
           "name": "entity.name.type.ferlium",
@@ -226,6 +342,10 @@
         {
           "name": "constant.language.control-flow.ferlium",
           "match": "\\b(Continue|Break)\\b"
+        },
+        {
+          "name": "constant.language.placeholder.ferlium",
+          "match": "\\b_\\b"
         }
       ]
     },
@@ -233,7 +353,7 @@
       "patterns": [
         {
           "name": "variable.other.ferlium",
-          "match": "\\b[a-z_][a-zA-Z0-9_]*\\b"
+          "match": "\\b(?:r#)?[a-z_][a-zA-Z0-9_]*\\b"
         }
       ]
     }
